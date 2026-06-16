@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Hero Aura Violet</title>
+  <desc id="desc">Fondo decorativo morado, negro y dorado inspirado en regalos y flores.</desc>
+  <defs>
+    <radialGradient id="glow" cx="68%" cy="28%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.75"/>
+      <stop offset="55%" stop-color="#3B0764" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="#050505"/>
+  <rect width="1200" height="700" fill="url(#glow)"/>
+  <circle cx="880" cy="250" r="132" fill="#7E22CE" opacity="0.55"/>
+  <circle cx="970" cy="310" r="96" fill="#EC4899" opacity="0.38"/>
+  <circle cx="760" cy="332" r="72" fill="#581C87" opacity="0.75"/>
+  <rect x="670" y="390" width="290" height="190" rx="26" fill="#111111" stroke="url(#gold)" stroke-width="5"/>
+  <path d="M662 425 C760 370 870 370 970 425" fill="none" stroke="#D4AF37" stroke-width="8" opacity="0.75"/>
+  <path d="M600 520 C770 460 930 450 1100 520" fill="none" stroke="#D4AF37" stroke-width="3" opacity="0.55"/>
+  <text x="110" y="250" font-family="Georgia, serif" font-size="78" font-weight="700" fill="#FFFFFF">Aura Violet</text>
+  <text x="115" y="326" font-family="Georgia, serif" font-size="64" font-style="italic" fill="#D4AF37">Momentos inolvidables</text>
+  <text x="118" y="382" font-family="Arial, sans-serif" font-size="25" fill="#E9D5FF">Detalles personalizados, diseno grafico y soluciones creativas.</text>
+</svg>

@@ -1,12 +1,11 @@
 :root {
-  --color-primary: #6B21A5;
+  --color-primary: #6B21A8;
   --color-primary-dark: #581C87;
   --color-primary-light: #9333EA;
-  --color-secondary: #0EA5E9;
-  --color-accent: #F59E0B;
-  --color-background: #F8FAFC;
-  --color-text: #1E293B;
-  --color-text-light: #64748B;
+  --color-accent: #D4AF37;
+  --color-background: #111111;
+  --color-text: #FFFFFF;
+  --color-text-light: #E9D5FF;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
@@ -25,9 +24,19 @@
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   color: var(--color-text);
   background-color: var(--color-background);
+  min-width: 320px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::-webkit-scrollbar {
@@ -35,10 +44,36 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #E2E8F0;
+  background: #111111;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
+  background: linear-gradient(180deg, var(--color-primary), var(--color-accent));
   border-radius: 4px;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .gold-text {
+    @apply bg-gradient-to-r from-amber-200 via-[#D4AF37] to-amber-500 bg-clip-text text-transparent;
+  }
+
+  .glass-card {
+    @apply border border-white/10 bg-white/[0.06] shadow-2xl shadow-purple-950/30 backdrop-blur;
+  }
+
+  .btn-primary {
+    @apply inline-flex min-h-12 items-center justify-center rounded-full bg-[#D4AF37] px-6 py-3 text-sm font-bold uppercase tracking-wide text-neutral-950 transition hover:-translate-y-0.5 hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-200 focus:ring-offset-2 focus:ring-offset-neutral-950;
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-12 items-center justify-center rounded-full border border-[#D4AF37]/70 px-6 py-3 text-sm font-bold uppercase tracking-wide text-[#D4AF37] transition hover:-translate-y-0.5 hover:bg-[#D4AF37] hover:text-neutral-950 focus:outline-none focus:ring-2 focus:ring-amber-200 focus:ring-offset-2 focus:ring-offset-neutral-950;
+  }
 }

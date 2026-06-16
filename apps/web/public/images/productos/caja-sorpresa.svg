@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="15%" r="80%">
+      <stop offset="0%" stop-color="#9333EA"/>
+      <stop offset="100%" stop-color="#08020D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="55%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="460" rx="34" fill="url(#bg)"/>
+  <circle cx="500" cy="90" r="110" fill="#EC4899" opacity=".22"/>
+  <rect x="180" y="180" width="280" height="190" rx="20" fill="#111111" stroke="url(#gold)" stroke-width="8"/>
+  <path d="M170 190h300v55H170z" fill="#241033" stroke="url(#gold)" stroke-width="8"/>
+  <path d="M320 160v220M210 160c40-70 90-60 110 20M430 160c-40-70-90-60-110 20" fill="none" stroke="#A855F7" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="260" cy="285" r="34" fill="#F9A8D4"/>
+  <circle cx="350" cy="300" r="42" fill="#7E22CE"/>
+  <text x="320" y="420" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#FFFFFF">Caja sorpresa</text>
+</svg>
