@@ -2,8 +2,7 @@ import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { services } from '../data/siteData'
 
-const inputClass =
-  'w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-white placeholder:text-white/45 outline-none transition focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/25'
+const inputClass = 'theme-input w-full rounded-2xl px-4 py-3 outline-none transition'
 
 export default function ContactForm() {
   const {
@@ -32,7 +31,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit(onSubmit)} className="glass-card rounded-[2rem] p-5 sm:p-8">
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="space-y-2">
-          <span className="text-sm font-semibold text-purple-100">Nombre</span>
+          <span className="theme-text-muted text-sm font-semibold text-purple-100">Nombre</span>
           <input
             {...register('name', { required: 'El nombre es requerido', minLength: { value: 2, message: 'Nombre muy corto' } })}
             placeholder="Tu nombre"
@@ -42,7 +41,7 @@ export default function ContactForm() {
         </label>
 
         <label className="space-y-2">
-          <span className="text-sm font-semibold text-purple-100">Email</span>
+          <span className="theme-text-muted text-sm font-semibold">Email</span>
           <input
             {...register('email', {
               required: 'El email es requerido',
@@ -56,12 +55,12 @@ export default function ContactForm() {
         </label>
 
         <label className="space-y-2">
-          <span className="text-sm font-semibold text-purple-100">Telefono</span>
+          <span className="theme-text-muted text-sm font-semibold">Telefono</span>
           <input {...register('phone')} placeholder="Opcional" className={inputClass} />
         </label>
 
         <label className="space-y-2">
-          <span className="text-sm font-semibold text-purple-100">Tipo de servicio</span>
+          <span className="theme-text-muted text-sm font-semibold">Tipo de servicio</span>
           <select {...register('service')} className={inputClass}>
             {services.map((service) => (
               <option key={service.id} value={service.id} className="bg-neutral-950">
@@ -73,7 +72,7 @@ export default function ContactForm() {
       </div>
 
       <label className="mt-5 block space-y-2">
-        <span className="text-sm font-semibold text-purple-100">Mensaje</span>
+        <span className="theme-text-muted text-sm font-semibold">Mensaje</span>
         <textarea
           {...register('message', {
             required: 'Cuentanos que necesitas',

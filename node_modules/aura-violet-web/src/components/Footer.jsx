@@ -3,40 +3,40 @@ import { brand } from '../data/siteData'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-black text-white">
+    <footer className="theme-surface-alt border-t theme-border">
       <div className="container-page py-10">
         <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr_1fr]">
           <div>
             <div className="mb-4 flex items-center gap-3">
               <img
-                src="/images/logo/aura-violet-logo.svg"
+                src={brand.logo}
                 alt="Aura Violet"
-                className="h-14 w-14 rounded-full border border-[#D4AF37]/70 bg-white object-cover"
+                className="theme-logo h-14 w-14 rounded-full object-contain p-1"
               />
               <div>
-                <p className="font-serif text-2xl text-[#D4AF37]">{brand.name}</p>
-                <p className="text-sm text-purple-100/75">{brand.tagline}</p>
+                <p className="theme-accent font-serif text-2xl">{brand.name}</p>
+                <p className="theme-text-muted text-sm">{brand.tagline}</p>
               </div>
             </div>
-            <p className="max-w-sm text-sm leading-6 text-white/70">
+            <p className="theme-text-soft max-w-sm text-sm leading-6">
               Detalles personalizados, diseno grafico y soluciones creativas para regalos, celebraciones,
               publicidad y proyectos escolares.
             </p>
           </div>
 
           <div>
-            <h3 className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-[#D4AF37]">Enlaces</h3>
-            <div className="grid gap-2 text-sm text-white/70">
-              <Link className="hover:text-[#D4AF37]" to="/">Inicio</Link>
-              <Link className="hover:text-[#D4AF37]" to="/servicios">Servicios</Link>
-              <Link className="hover:text-[#D4AF37]" to="/galeria">Productos</Link>
-              <Link className="hover:text-[#D4AF37]" to="/contacto">Contacto</Link>
+            <h3 className="theme-accent mb-3 text-sm font-bold uppercase tracking-[0.25em]">Enlaces</h3>
+            <div className="theme-text-soft grid gap-2 text-sm">
+              <Link className="hover:text-[var(--theme-accent-text)]" to="/">Inicio</Link>
+              <Link className="hover:text-[var(--theme-accent-text)]" to="/servicios">Servicios</Link>
+              <Link className="hover:text-[var(--theme-accent-text)]" to="/galeria">Productos</Link>
+              <Link className="hover:text-[var(--theme-accent-text)]" to="/contacto">Contacto</Link>
             </div>
           </div>
 
           <div>
-            <h3 className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-[#D4AF37]">Contacto</h3>
-            <div className="space-y-2 text-sm text-white/70">
+            <h3 className="theme-accent mb-3 text-sm font-bold uppercase tracking-[0.25em]">Contacto</h3>
+            <div className="theme-text-soft space-y-2 text-sm">
               <p>{brand.owner}</p>
               <p>{brand.email}</p>
               <p>{brand.whatsapp}</p>
@@ -46,7 +46,7 @@ export default function Footer() {
                   <a
                     key={social}
                     href="#"
-                    className="rounded-full border border-white/10 px-3 py-1 text-xs hover:border-[#D4AF37] hover:text-[#D4AF37]"
+                    className="rounded-full border px-3 py-1 text-xs theme-border hover:border-[var(--theme-accent)] hover:text-[var(--theme-accent-text)]"
                   >
                     {social}
                   </a>
@@ -56,8 +56,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-white/10 pt-5 text-center text-xs text-white/50">
-          &copy; 2026 {brand.legalName}. Todos los derechos reservados.
+        <div className="theme-text-soft mt-8 border-t pt-5 text-center text-xs theme-border">
+          &copy; 2026 {brand.name}. Todos los derechos reservados.
         </div>
       </div>
     </footer>

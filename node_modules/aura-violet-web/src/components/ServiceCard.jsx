@@ -22,10 +22,10 @@ export default function ServiceCard({ service, compact = false }) {
       </div>
 
       <div className="p-6">
-        <h3 className="mb-3 text-xl font-bold text-white">{compact ? shortTitle : title}</h3>
-        <p className="text-sm leading-6 text-purple-100/75">{description}</p>
+        <h3 className="theme-text mb-3 text-xl font-bold">{compact ? shortTitle : title}</h3>
+        <p className="theme-text-muted text-sm leading-6">{description}</p>
         {!compact && (
-          <Link to="/contacto" className="mt-6 inline-flex text-sm font-bold uppercase tracking-wide text-[#D4AF37]">
+          <Link to="/contacto" className="theme-accent mt-6 inline-flex text-sm font-bold uppercase tracking-wide">
             Consultar servicio
           </Link>
         )}

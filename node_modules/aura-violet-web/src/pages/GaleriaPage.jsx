@@ -7,7 +7,7 @@ export default function GaleriaPage() {
   const [selectedItem, setSelectedItem] = useState(null)
 
   return (
-    <main className="bg-neutral-950 pt-28">
+    <main className="theme-page pt-28">
       <section className="section-padding">
         <div className="container-page">
           <motion.div
@@ -16,9 +16,9 @@ export default function GaleriaPage() {
             transition={{ duration: 0.6 }}
             className="mx-auto mb-12 max-w-3xl text-center"
           >
-            <p className="text-sm font-bold uppercase tracking-[0.35em] text-[#D4AF37]">Galeria</p>
-            <h1 className="mt-4 font-serif text-4xl font-bold text-white sm:text-6xl">Inspiracion Aura Violet</h1>
-            <p className="mt-5 text-lg leading-8 text-purple-100/75">
+            <p className="theme-accent text-sm font-bold uppercase tracking-[0.35em]">Galeria</p>
+            <h1 className="theme-text mt-4 font-serif text-4xl font-bold sm:text-6xl">Inspiracion Aura Violet</h1>
+            <p className="theme-text-muted mt-5 text-lg leading-8">
               Muestras visuales preparadas como placeholders elegantes mientras se cargan fotografias reales de trabajos.
             </p>
           </motion.div>
@@ -44,9 +44,9 @@ export default function GaleriaPage() {
             className="glass-card max-w-xl rounded-[2rem] p-6 text-center"
             onClick={(event) => event.stopPropagation()}
           >
-            <p className="text-sm font-bold uppercase tracking-[0.35em] text-[#D4AF37]">{selectedItem.category}</p>
-            <h2 className="mt-3 font-serif text-3xl font-bold text-white">{selectedItem.title}</h2>
-            <p className="mt-4 text-purple-100/75">
+            <p className="theme-accent text-sm font-bold uppercase tracking-[0.35em]">{selectedItem.category}</p>
+            <h2 className="theme-text mt-3 font-serif text-3xl font-bold">{selectedItem.title}</h2>
+            <p className="theme-text-muted mt-4">
               Este espacio funcionara como lightbox para fotografias reales del proyecto seleccionado.
             </p>
             <button type="button" className="btn-primary mt-6" onClick={() => setSelectedItem(null)}>

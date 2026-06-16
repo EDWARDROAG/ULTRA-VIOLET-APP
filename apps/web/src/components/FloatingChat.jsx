@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { brand } from '../data/siteData'
 
 const quickActions = [
   'Quiero un regalo personalizado',
@@ -17,7 +18,7 @@ export default function FloatingChat() {
         <div className="pointer-events-auto overflow-hidden rounded-2xl border border-purple-200/30 bg-white text-neutral-950 shadow-2xl shadow-purple-950/40">
           <div className="flex items-center justify-between bg-gradient-to-r from-purple-950 to-fuchsia-800 px-4 py-3 text-white">
             <div className="flex items-center gap-3">
-              <img src="/images/logo/aura-violet-logo.svg" alt="Aura Violet" className="h-9 w-9 rounded-full bg-white object-cover" />
+              <img src={brand.logo} alt="Aura Violet" className="h-9 w-9 rounded-full bg-white object-cover" />
               <div>
                 <p className="text-sm font-bold">Aura Violet Asistente</p>
                 <p className="text-xs text-purple-100">En linea</p>
@@ -56,7 +57,7 @@ export default function FloatingChat() {
           className="grid h-16 w-16 place-items-center rounded-full bg-gradient-to-br from-purple-700 to-fuchsia-600 text-3xl text-white shadow-2xl shadow-purple-950/40"
           onClick={() => setIsOpen((value) => !value)}
         >
-          {isOpen ? 'x' : <img src="/images/logo/aura-violet-logo.svg" alt="" className="h-12 w-12 rounded-full bg-white object-cover" />}
+          {isOpen ? 'x' : <img src={brand.logo} alt="" className="h-12 w-12 rounded-full bg-white object-cover" />}
         </button>
         <a
           href={whatsappUrl}

@@ -6,6 +6,8 @@ export const brand = {
   whatsapp: 'WhatsApp disponible pronto',
   tagline: 'Detalles que crean emociones',
   promise: 'Creamos momentos inolvidables',
+  logo: '/images/logo/logo-Photoroom.png',
+  hero: '/images/hero/hero-aura-violet.png',
 }
 
 export const services = [

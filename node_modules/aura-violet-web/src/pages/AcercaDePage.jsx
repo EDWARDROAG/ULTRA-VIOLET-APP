@@ -3,7 +3,7 @@ import { audiences, brand, values } from '../data/siteData'
 
 export default function AcercaDePage() {
   return (
-    <main className="bg-neutral-950 pt-28">
+    <main className="theme-page pt-28">
       <section className="section-padding">
         <div className="container-page">
           <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
@@ -13,12 +13,10 @@ export default function AcercaDePage() {
               transition={{ duration: 0.6 }}
               className="glass-card rounded-[2.5rem] p-7"
             >
-              <div className="grid aspect-square place-items-center rounded-[2rem] bg-[radial-gradient(circle_at_50%_30%,rgba(212,175,55,0.25),transparent_28%),linear-gradient(145deg,#16001f,#3b0764,#050505)]">
+              <div className="grid aspect-square place-items-center rounded-[2rem]" style={{ background: 'var(--theme-card-bg)' }}>
                 <div className="text-center">
-                  <div className="mx-auto grid h-32 w-32 place-items-center rounded-full border border-[#D4AF37]/70 font-serif text-5xl font-bold text-[#D4AF37]">
-                    AV
-                  </div>
-                  <p className="mt-6 text-sm uppercase tracking-[0.35em] text-purple-100">Alexandra Lopez</p>
+                  <img src={brand.logo} alt={brand.name} className="theme-logo mx-auto h-32 w-32 rounded-full object-contain p-2" />
+                  <p className="theme-text-muted mt-6 text-sm uppercase tracking-[0.35em]">Alexandra Lopez</p>
                 </div>
               </div>
             </motion.div>
@@ -28,9 +26,9 @@ export default function AcercaDePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <p className="text-sm font-bold uppercase tracking-[0.35em] text-[#D4AF37]">Nosotros</p>
-              <h1 className="mt-4 font-serif text-4xl font-bold text-white sm:text-6xl">{brand.legalName}</h1>
-              <p className="mt-6 text-lg leading-8 text-purple-100/75">
+              <p className="theme-accent text-sm font-bold uppercase tracking-[0.35em]">Nosotros</p>
+              <h1 className="theme-text mt-4 font-serif text-4xl font-bold sm:text-6xl">{brand.name}</h1>
+              <p className="theme-text-muted mt-6 text-lg leading-8">
                 Un emprendimiento creativo dedicado al diseno, elaboracion y personalizacion de detalles especiales
                 para toda ocasion. Combinamos creatividad, diseno grafico y trabajos manuales para crear productos
                 unicos y soluciones personalizadas.
@@ -60,8 +58,8 @@ export default function AcercaDePage() {
                 transition={{ duration: 0.5, delay: index * 0.08 }}
                 className="glass-card rounded-[2rem] p-7"
               >
-                <h2 className="font-serif text-2xl font-bold text-[#D4AF37]">{card.title}</h2>
-                <p className="mt-4 text-sm leading-6 text-purple-100/75">{card.text}</p>
+                <h2 className="theme-accent font-serif text-2xl font-bold">{card.title}</h2>
+                <p className="theme-text-muted mt-4 text-sm leading-6">{card.text}</p>
               </motion.article>
             ))}
           </div>
