@@ -35,3 +35,7 @@ npm run build --prefix apps/web
 ## Despliegue
 
 La app usa `HashRouter`, por lo que funciona en GitHub Pages sin configurar reglas de servidor para rutas internas.
+
+El despliegue se realiza con GitHub Actions desde `.github/workflows/deploy-pages.yml`. El workflow compila `apps/web` y publica `apps/web/dist` con la base `/ULTRA-VIOLET-APP/`.
+
+En GitHub, configura `Settings > Pages > Build and deployment > Source` como `GitHub Actions`.
