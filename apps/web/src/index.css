@@ -1,0 +1,44 @@
+:root {
+  --color-primary: #6B21A5;
+  --color-primary-dark: #581C87;
+  --color-primary-light: #9333EA;
+  --color-secondary: #0EA5E9;
+  --color-accent: #F59E0B;
+  --color-background: #F8FAFC;
+  --color-text: #1E293B;
+  --color-text-light: #64748B;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E2E8F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
