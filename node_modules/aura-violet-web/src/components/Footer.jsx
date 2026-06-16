@@ -8,9 +8,11 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr_1fr]">
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <span className="grid h-12 w-12 place-items-center rounded-full border border-[#D4AF37]/70 text-lg font-serif font-bold text-[#D4AF37]">
-                AV
-              </span>
+              <img
+                src="/images/logo/aura-violet-logo.svg"
+                alt="Aura Violet"
+                className="h-14 w-14 rounded-full border border-[#D4AF37]/70 bg-white object-cover"
+              />
               <div>
                 <p className="font-serif text-2xl text-[#D4AF37]">{brand.name}</p>
                 <p className="text-sm text-purple-100/75">{brand.tagline}</p>

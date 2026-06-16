@@ -30,12 +30,14 @@ export default function Header() {
       <nav className="container-page py-3">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
-            <span className="grid h-11 w-11 place-items-center rounded-full border border-[#D4AF37]/70 bg-purple-950/80 text-lg font-serif font-bold text-[#D4AF37]">
-              AV
-            </span>
+            <img
+              src="/images/logo/aura-violet-logo.svg"
+              alt="Aura Violet"
+              className="h-11 w-11 rounded-full border border-[#D4AF37]/70 bg-white object-cover"
+            />
             <span>
               <span className="block font-serif text-xl font-semibold leading-none text-[#D4AF37]">{brand.name}</span>
-              <span className="text-[11px] uppercase tracking-[0.3em] text-purple-100/80">SAS</span>
+              <span className="text-[11px] uppercase tracking-[0.2em] text-purple-100/80">{brand.tagline}</span>
             </span>
           </Link>
 

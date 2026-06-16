@@ -25,7 +25,6 @@ export default function HomePage() {
               </span>
               <div>
                 <p className="font-serif text-4xl italic leading-none text-[#D4AF37]">{brand.name}</p>
-                <p className="mt-1 text-xs uppercase tracking-[0.6em] text-white/80">SAS</p>
                 <p className="mt-2 text-sm text-[#D4AF37]/90">{brand.tagline}</p>
               </div>
             </div>
@@ -81,8 +80,8 @@ export default function HomePage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {services.map((service) => (
               <div key={service.id} className="text-center">
-                <div className="mx-auto grid h-24 w-24 place-items-center rounded-full border border-[#D4AF37]/70 bg-purple-950 text-2xl font-serif font-bold text-[#D4AF37] shadow-lg shadow-purple-900/30">
-                  {service.icon}
+                <div className="mx-auto h-24 w-24 overflow-hidden rounded-full border-2 border-[#D4AF37] bg-purple-950 shadow-lg shadow-purple-900/30">
+                  <img src={service.image} alt={service.shortTitle} className="h-full w-full object-cover" />
                 </div>
                 <h3 className="mt-4 text-sm font-bold uppercase text-white">{service.shortTitle}</h3>
                 <p className="mt-2 text-xs leading-5 text-white/65">{service.description}</p>
@@ -119,9 +118,15 @@ export default function HomePage() {
 
       <section className="bg-[#080808] py-14">
         <div className="container-page grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="hidden min-h-80 rounded-r-[3rem] bg-[radial-gradient(circle_at_45%_30%,rgba(168,85,247,0.5),transparent_34%),linear-gradient(135deg,#090011,#111111)] lg:block" />
+          <div className="hidden min-h-80 place-items-center rounded-r-[3rem] border border-[#D4AF37]/30 bg-[radial-gradient(circle_at_45%_30%,rgba(168,85,247,0.5),transparent_34%),linear-gradient(135deg,#090011,#111111)] p-10 lg:grid">
+            <img
+              src="/images/logo/aura-violet-logo.svg"
+              alt="Logo Aura Violet"
+              className="max-h-56 w-full max-w-xs rounded-[2rem] bg-white object-contain p-4 shadow-2xl shadow-purple-950/40"
+            />
+          </div>
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.35em] text-[#D4AF37]">Somos Aura Violet SAS</p>
+            <p className="text-sm font-bold uppercase tracking-[0.35em] text-[#D4AF37]">Somos Aura Violet</p>
             <h2 className="mt-3 font-serif text-4xl font-bold text-white">Un emprendimiento creativo que transforma ideas en detalles inolvidables.</h2>
             <div className="mt-8 grid gap-6 md:grid-cols-2">
               <div className="glass-card rounded-2xl p-6">

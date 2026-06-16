@@ -14,6 +14,7 @@ export const services = [
     title: 'Detalles y regalos personalizados',
     shortTitle: 'Regalos personalizados',
     icon: 'AV',
+    image: '/images/servicios/regalos-personalizados.jpg',
     description:
       'Ramos, cajas sorpresa, detalles romanticos, decoraciones tematicas y regalos para fechas especiales.',
     gradient: 'from-fuchsia-900 via-purple-800 to-black',
@@ -23,6 +24,7 @@ export const services = [
     title: 'Diseno grafico e impresion',
     shortTitle: 'Diseno grafico',
     icon: 'DG',
+    image: '/images/servicios/diseno-grafico.jpg',
     description:
       'Tarjetas, volantes, menus, invitaciones, logos e identidad visual para marcas y celebraciones.',
     gradient: 'from-purple-950 via-violet-800 to-amber-900',
@@ -32,6 +34,7 @@ export const services = [
     title: 'Trabajos escolares y academicos',
     shortTitle: 'Trabajos escolares',
     icon: 'TE',
+    image: '/images/servicios/trabajos-escolares.jpg',
     description:
       'Carteleras educativas, carteles informativos, dibujos, maquetas y material didactico.',
     gradient: 'from-black via-purple-950 to-violet-700',
@@ -41,6 +44,7 @@ export const services = [
     title: 'Papeleria creativa y manualidades',
     shortTitle: 'Manualidades',
     icon: 'PM',
+    image: '/images/servicios/manualidades.jpg',
     description:
       'Tarjeteria artesanal, etiquetas, stickers, decoraciones personalizadas y piezas hechas a mano.',
     gradient: 'from-violet-950 via-purple-900 to-black',
@@ -70,10 +74,10 @@ export const featuredProducts = [
     image: '/images/productos/caja-sorpresa.jpg',
   },
   {
-    title: 'Ramos personalizados',
-    description: 'Arreglos florales para cada ocasion especial.',
+    title: 'Regalos personalizados',
+    description: 'Detalles especiales para sorprender en cada ocasion.',
     price: 'Desde $35.000',
-    image: '/images/productos/ramo-personalizado.jpg',
+    image: '/images/productos/regalo-personalizado.jpg',
   },
   {
     title: 'Diseno grafico',
